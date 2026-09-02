@@ -1,4 +1,4 @@
-const SHELL_CACHE = 'lisbon-github-pages-v2-shell';
+const SHELL_CACHE = 'lisbon-github-pages-v4-shell';
 const MAP_CACHE = 'lisbon-github-pages-v1-maps';
 const BASE = new URL('./', self.location.href);
 const MAP_URLS = [
@@ -14,10 +14,10 @@ const SHELL_URLS = [
   './assets/leaflet.js',
   './assets/pmtiles.js',
   './assets/protomaps-leaflet.js',
-  './assets/itinerary.js?v=20260902-day1',
-  './assets/app.css?v=20260902-day1',
-  './assets/app.js?v=20260902-day1',
-  './assets/offline.js?v=20260902-day1'
+  './assets/itinerary.js?v=20260902-day3-pena',
+  './assets/app.css?v=20260902-day3-pena',
+  './assets/app.js?v=20260902-day3-pena',
+  './assets/offline.js?v=20260902-day3-pena'
 ].map(function (path) {
   return new URL(path, BASE).href;
 });

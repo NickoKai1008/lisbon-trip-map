@@ -21,8 +21,8 @@ https://<你的GitHub用户名>.github.io/lisbon-trip-map/
 ## 内容
 
 - Day 1：Baixa、The Folks Chiado、阿尔法马、Santo Amaro 大桥日落、Pinóquio 晚餐
-- Day 2：热罗尼莫斯、贝伦、HIPPOtrip
-- Day 3 上午：Cristo Rei
+- Day 2：热罗尼莫斯、贝伦、HIPPOtrip、Cristo Rei、Jardim do Rio 日落、Cacilhas 渡轮
+- Day 3 上午：Rossio、Sintra、434、09:30 佩纳宫、返回里斯本
 - 海岸备选：Cascais、地狱之口、罗卡角、Azenhas do Mar
 
 地图数据来自 OpenStreetMap / Protomaps。仓库不包含姓名、电话、订单号或住宿地址。
