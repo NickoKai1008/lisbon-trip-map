@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="里斯本 2026年9月1日至3日完整逐站路线、街图和离线交通提醒">
+  <title>里斯本 2.5 天 · 完整路线地图</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/leaflet.css">
+  <link rel="stylesheet" href="./assets/app.css?v=20260902-day1">
+</head>
+<body>
+  <main class="app" id="app">
+    <aside class="rail" aria-label="路线与逐站说明">
+      <div class="mobile-head">
+        <header class="topline">
+          <div>
+            <p class="eyebrow">LISBOA · 2026.09.01–03</p>
+            <h1>里斯本 2.5 天<br>完整路线地图</h1>
+          </div>
+          <button class="offline-badge" id="offline-button" type="button">保存离线</button>
+        </header>
+        <p class="offline-status" id="offline-status">第一次请保持联网；保存完成后可从主屏幕离线打开。</p>
+        <nav class="route-tabs" id="route-tabs" aria-label="选择每日路线"></nav>
+        <section class="start-picker" aria-label="选择第一天起点">
+          <span>DAY 1 起点</span>
+          <div class="start-buttons" id="start-buttons"></div>
+        </section>
+        <p class="start-note">起点选择只改变 DAY 1 第一站；其余路线顺序不变。</p>
+      </div>
+      <div class="content">
+        <section class="intro" id="intro"></section>
+        <section class="progress-block" id="progress"></section>
+        <article class="stop-card" id="stop-card"></article>
+        <div class="nav-row" id="nav-row" aria-label="上一站或下一站"></div>
+        <div class="stops-heading">
+          <h3>整条路线</h3>
+          <button class="fit-button" id="fit-route" type="button">在地图显示全程</button>
+        </div>
+        <div class="stop-list" id="stop-list"></div>
+        <aside class="closed-reminder"><strong>关闭提醒：</strong>圣胡斯塔升降机与 Bica / Glória / Lavra 黄色斜坡缆车目前只拍照，不等车；国家瓷砖博物馆施工关闭，不要专程前往。</aside>
+        <p class="footer-note">官网按钮仅在联网时使用。直线用于显示逐站顺序；实际步行按卡片中的街道与交通说明。</p>
+      </div>
+    </aside>
+    <section class="map-pane" aria-label="完整街道地图">
+      <div id="map"></div>
+      <div class="map-loading" id="map-loading">
+        <div class="loader-card">
+          <div class="loader"></div>
+          <strong id="loading-title">正在读取街图</strong>
+          <span id="loading-note">第一次打开需要联网；地图出现后即可使用。</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/leaflet.js"></script>
+  <script src="./assets/pmtiles.js"></script>
+  <script src="./assets/protomaps-leaflet.js"></script>
+  <script src="./assets/itinerary.js?v=20260902-day1"></script>
+  <script src="./assets/app.js?v=20260902-day1"></script>
+  <script src="./assets/offline.js?v=20260902-day1"></script>
+</body>
+</html>
